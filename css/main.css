@@ -44,6 +44,11 @@ body, html {
 @media (max-width: 450px) { /*при макс ширине 450 то у текста размер 3em*/
     .carousel-caption .display-2 {
         font-size: 3em;
+
+    }
+    .carousel_inner img{
+        max-width: 100%;
+        height: auto;
     }
 }
 .jumbotron {/*серый блок с текстом*/
