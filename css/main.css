@@ -12,22 +12,24 @@ body, html {
 .navbar-nav li { /*каждый лист-итем*/
     padding-right: 20px;
 
+
 }
 .nav-item a:hover {/*при наведении на меню*/
-    color: orange;
+    color: orange !important;
     font-size: 20px;
 }
 
 .nav-link {font-size: 1.1em !important;} /*меняем размер каждой ссылки, импортант чтобы перебить бутстрап*/
 
 .carousel_inner {/*блок фона*/
-    height: 100%;
+    height: 870px;
+    width: auto;
 
 }
 
 .carousel_inner img{
-
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 @media (min-width: 1100px) { /*адаптируем под 1100px*/
     .carousel_inner img{
@@ -44,11 +46,6 @@ body, html {
 @media (max-width: 450px) { /*при макс ширине 450 то у текста размер 3em*/
     .carousel-caption .display-2 {
         font-size: 3em;
-
-    }
-    .carousel_inner img{
-        max-width: 100%;
-        height: auto;
     }
 }
 .jumbotron {/*серый блок с текстом*/
@@ -135,4 +132,11 @@ footer {
     padding-top: 50px;
     border-top: 4px solid silver;
     color: white;
+}
+
+
+
+.card img {
+    height: 200px;
+    width: auto;
 }
